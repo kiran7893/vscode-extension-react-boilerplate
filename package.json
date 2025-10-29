@@ -1,0 +1,53 @@
+{
+  "name": "vscode-extension-react-boilerplate",
+  "displayName": "VS Code React Extension Boilerplate",
+  "description": "A production-ready boilerplate for VS Code extensions with React webviews",
+  "version": "0.0.1",
+  "publisher": "Indhic-ai",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.openWebview",
+        "title": "Open Webview",
+        "category": "Extension"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "npm run check-types && npm run lint && node esbuild.js",
+    "watch": "node esbuild.js --watch",
+    "package": "npm run check-types && npm run lint && node esbuild.js --production",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint src",
+    "vsce:package": "npm run package && vsce package",
+    "vsce:publish": "npm run package && vsce publish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.x",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@types/vscode": "^1.90.0",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "autoprefixer": "^10.4.17",
+    "cssnano": "^7.1.1",
+    "esbuild": "^0.25.3",
+    "eslint": "^9.25.1",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.8.3"
+  }
+}
