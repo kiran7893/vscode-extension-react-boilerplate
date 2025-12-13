@@ -43,7 +43,7 @@ This is the easiest for testing:
 
 1. **Open your extension folder in Cursor:**
    ```bash
-   cd /Users/indhicdev/Indhic-dev/sample-extension/vscode-extension-react-boilerplate
+   cd /path/to/vscode-extension-react-boilerplate
    cursor .
    ```
 
@@ -78,10 +78,10 @@ cursor --install-extension vscode-extension-react-boilerplate-0.0.1.vsix
 **Step 1: Verify Installation**
 ```bash
 # Check if extension is installed in Cursor
-cursor --list-extensions --show-versions | grep kiran
+cursor --list-extensions --show-versions | grep vscode-extension-react-boilerplate
 
 # Should show:
-# kiran.vscode-extension-react-boilerplate@0.0.1
+# <publisher-id>.vscode-extension-react-boilerplate@0.0.1
 ```
 
 **Step 2: Install via Command Line (Best Option)**
@@ -105,7 +105,7 @@ In Cursor:
 **Step 4: Clear and Reinstall**
 ```bash
 # Uninstall from Cursor
-cursor --uninstall-extension kiran.vscode-extension-react-boilerplate
+cursor --uninstall-extension <publisher-id>.vscode-extension-react-boilerplate
 
 # Rebuild and repackage
 npm run vsce:package
@@ -154,7 +154,7 @@ cursor --list-extensions --show-versions | grep "vscode-extension-react-boilerpl
 
 Should show:
 ```
-kiran.vscode-extension-react-boilerplate@0.0.1
+<publisher-id>.vscode-extension-react-boilerplate@0.0.1
 ```
 
 ## Quick Start Commands

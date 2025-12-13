@@ -12,12 +12,6 @@ src/**
 !out/**/*.js
 !dist/**/*.js
 !dist/**/*.css
-tsconfig.json
 node_modules
-esbuild.js
-tailwind.config.js
-postcss.config.js
 *.backup
-*.md
-!README.md
 

@@ -47,13 +47,13 @@
 
 **Check if installed:**
 ```bash
-code --list-extensions | grep -i "react\|boilerplate\|kiran"
+code --list-extensions | grep -i "react\|boilerplate"
 ```
 
 **If not found, reinstall:**
 1. Uninstall if exists:
    ```bash
-   code --uninstall-extension kiran.vscode-extension-react-boilerplate
+   code --uninstall-extension <publisher-id>.vscode-extension-react-boilerplate
    ```
 2. Install again from VSIX file
 
@@ -146,7 +146,7 @@ This method is for **development** - changes auto-reload.
 4. **Reinstall extension:**
    ```bash
    # Uninstall
-   code --uninstall-extension kiran.vscode-extension-react-boilerplate
+   code --uninstall-extension <publisher-id>.vscode-extension-react-boilerplate
    
    # Rebuild and repackage
    npm run vsce:package

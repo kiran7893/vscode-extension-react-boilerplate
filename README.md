@@ -206,5 +206,3 @@ For detailed instructions, authentication setup, and best practices, see the DEP
 ## License
 
 MIT
-
-# vscode-extension-react-boilerplate
